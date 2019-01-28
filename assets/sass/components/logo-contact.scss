@@ -1,0 +1,42 @@
+body {
+    header {
+        .logo-contact {
+            text-align: center;
+            .items {
+                background-color: #FFFFFF;
+                .item1 {
+                    @include breakpoint(desktop) {
+                        padding-right: 15%;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-right: 15%;
+                    }
+                }
+                .item3 {
+                    margin-top: 13px;
+                    @include breakpoint(desktop) {
+                        padding-left: 15%;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-left: 15%;
+                    }
+                    i {
+                        position: absolute;
+                        left: 45%;
+                        top: 2%;
+                        font-size: 39px;
+                        @include breakpoint(phone) {
+                            top: 46px;
+                        }
+                        @include breakpoint(tablet) {
+                            left: 28%;
+                        }
+                    }
+                    p {
+                        font-size: 29px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+body {
+    main {
+        .whatsapp {
+            background-image: url('../../assets/images/Fondo-bloques.jpg');
+            padding-top: 10%;
+            padding-bottom: 10%;
+            .item-1 {
+                text-align: center;
+                padding-top: 16%;
+                h2 {
+                    font-size: 39px;
+                    color: #032233;
+                    @include breakpoint(phone) {
+                        font-size: 23px;
+                    }
+                    strong {
+                        font-size: 88px;
+                        @include breakpoint(phone) {
+                            font-size: 55px;
+                        }
+                    }
+                }
+                .btn {
+                    background: linear-gradient(to right, #00A525 0%, #00CA62 100%);
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    width: 42%;
+                    font-size: 27px;
+                    border-radius: 30px;
+                    margin-top: 30px;
+                    transition: 1s;
+                    @include breakpoint(phone) {
+                        width: 84%;
+                        margin-bottom: 40px;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 60%;
+                    }
+                }
+                .btn:hover {
+                    background: linear-gradient(to right, #00CA62 0%, #00A525 100%);
+                }
+            }
+            .item-2 {
+                img {
+                    width: 100%;
+                    @include breakpoint(desktop) {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}

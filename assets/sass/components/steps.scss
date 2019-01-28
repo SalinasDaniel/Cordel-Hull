@@ -1,0 +1,88 @@
+body {
+    main {
+        .steps {
+            text-align: center;
+            padding-bottom: 10%;
+            background-color: #032233;
+            color: #FFFFFF;
+            .line {
+                text-align: left;
+                img {
+                    @include breakpoint(phone) {
+                        width: 100%;
+                    }
+                }
+            }
+            h2 {
+                @include breakpoint(phone) {
+                    margin-top: 40px;
+                }
+            }
+            .subtitle {
+                font-size: 24px;
+            }
+            .items {
+                margin-top: 100px;
+                padding-left: 10%;
+                padding-right: 10%;
+                hr {
+                    background: linear-gradient(to right, #BA8343 0%, #DBAC4A 100%);
+                    height: 2px;
+                    width: 60%;
+                    position: absolute;
+                    margin-top: 53px;
+                    margin-left: 10%;
+                    @include breakpoint(phone) {
+                        display: none;
+                    }
+                    @media screen and (min-width: 1900px) {
+                        width: 58%;
+                    }
+                }
+                .item {
+                    @include breakpoint(phone) {
+                        margin-bottom: 44px;
+                    }
+                    .num {
+                        width: 108px;
+                        height: 108px;
+                        background-color: #FFFFFF;
+                        border-radius: 53px;
+                        margin-bottom: 13px;
+                        padding-top: 4%;
+                        margin-left: 25%;
+                        @include breakpoint(desktop) {
+                            margin-left: 33%;
+                        }
+                        @media screen and (min-width: 1900px) {
+                            margin-left: 38%;
+                        }
+                        span {
+                            font-size: 55px;
+                            color: #BA171E;
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .btn {
+                margin-top: 58px;
+                background-color: #BA171E;
+                color: #FFFFFF;
+                font-size: 23px;
+                font-weight: bold;
+                border-radius: 10px;
+                transition: 1s;
+                @include breakpoint(phone) {
+                    margin-top: 0;
+                }
+            }
+            .btn:hover {
+                background-color: #FFFFFF;
+                color: #BA171E;
+            }
+        }
+    }
+}

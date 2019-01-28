@@ -1,0 +1,158 @@
+body {
+    main {
+        .headboard {
+            background-image: url('../../assets/images/Portada.jpg');
+            background-size: cover;
+            .team {
+                @include breakpoint(phone) {
+                    width: 100%;
+                    position: absolute;
+                    top: 256px;
+                }
+                @include breakpoint(tablet) {
+                    width: 50%;
+                    margin-top: -138px;
+                }
+                @include breakpoint(desktop) {
+                    margin-top: -269px;
+                    margin-left: 8%;
+                    width: 38%;
+                }
+            }
+            .form-description {
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 7%;
+                @include breakpoint(phone) {
+                    padding-top: 60%;
+                    margin-top: 56px;
+                    padding-bottom: 13%;
+                }
+                @include breakpoint(tablet) {
+                    padding-top: 10%;
+                }
+                .description {
+                    color: #FFFFFF;
+                    @include breakpoint(phone) {
+                        text-align: center;
+                        margin-top: 60px;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-left: 5%;
+                    }
+                    @include breakpoint(desktop) {
+                        padding-left: 11%;
+                    }
+                    h1 {
+                        line-height: 1;
+                        font-size: 46px;
+                        font-weight: bold;
+                        @include breakpoint(phone) {
+                            font-size: 27px;
+                        }
+                    }
+                    p {
+                        font-size: 28px;
+                    }
+                }
+                ul {
+                    text-align: left;
+                    li {
+                        font-size: 19px;
+                        font-style: italic;
+                        i {
+                            color: #BA171E;
+                        }
+                    }
+                }
+                img {
+                    float: left;
+                    margin-top: 17px;
+                    @include breakpoint(phone) {
+                        float: none;
+                    }
+                    @include breakpoint(tablet) {
+                        margin-top: 9px;
+                    }
+                }
+            }
+            .form {
+                .item {
+                    background-color: #FFFFFF;
+                    text-align: center;
+                    width: 62%;
+                    padding-right: 7%;
+                    padding-left: 7%;
+                    padding-top: 5%;
+                    padding-bottom: 8%;
+                    border-radius: 30px;
+                    @include breakpoint(phone) {
+                        width: 100%;
+                        padding-top: 10%;
+                        padding-bottom: 15%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 90%;
+                    }
+                    @include breakpoint(desktop) {
+                        margin-left: 15%;
+                    }
+                    form {
+                        input {
+                            display: block;
+                            width: 100%;
+                            height: 62px;
+                            margin-bottom: 20px;
+                            border-radius: 15px;
+                            border: solid 1px #D6D6D6;
+                            padding-left: 3%;
+                        }
+                         ::placeholder {
+                            color: #032233;
+                            font-weight: bold;
+                        }
+                        .btn {
+                            width: 100%;
+                            background-color: #BA171E;
+                            height: 60px;
+                            border-radius: 15px;
+                            border: solid 1px #BA171E;
+                            color: #FFFFFF;
+                            font-size: 30px;
+                            font-weight: bold;
+                            transition: 1s;
+                            -webkit-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+                            -moz-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+                            box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+                            @include breakpoint(phone) {
+                                font-size: 20px;
+                            }
+                        }
+                        .btn:hover {
+                            border: solid 1px #BA171E;
+                            background-color: transparent;
+                            color: #BA171E;
+                        }
+                    }
+                    img {
+                        float: left;
+                        margin-top: 14px;
+                    }
+                    p {
+                        color: #03132E;
+                        @include breakpoint(phone) {
+                            font-size: 23px;
+                            margin-top: 8px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 25px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 33px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

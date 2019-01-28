@@ -1,0 +1,192 @@
+body {
+    main {
+        .column-col {
+            height: 271px;
+            @include breakpoint(phone) {
+                height: auto;
+                padding-bottom: 10%;
+            }
+            @include breakpoint(tablet) {
+                height: 210px;
+            }
+        }
+        .column {
+            .items {
+                .item-1 {
+                    padding-left: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .item-2 {
+                    text-align: right;
+                    padding-right: 19%;
+                    padding-top: 3%;
+                    @include breakpoint(phone) {
+                        padding-right: 9%;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-right: 6%;
+                    }
+                    h2 {
+                        font-size: 59px;
+                        @include breakpoint(phone) {
+                            font-size: 28px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 43px;
+                        }
+                    }
+                    .btn {
+                        background-color: #BA171E;
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        border: solid 1px #BA171E;
+                        width: 26%;
+                        transition: 1s;
+                        @include breakpoint(phone) {
+                            width: 50%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 40%;
+                        }
+                    }
+                    .btn:hover {
+                        background-color: #FFFFFF;
+                        color: #BA171E;
+                    }
+                }
+            }
+        }
+        .col-column {
+            @include breakpoint(phone) {
+                padding-top: 10%;
+            }
+            .items {
+                .item-1 {
+                    padding-right: 0;
+                    img {
+                        @include breakpoint(tablet) {
+                            width: 160%;
+                            margin-left: -60%;
+                        }
+                        @include breakpoint(desktop) {
+                            width: 122%;
+                            margin-left: -22%;
+                        }
+                    }
+                }
+                .item-2 {
+                    text-align: left;
+                    padding-left: 9%;
+                    padding-right: 20%;
+                    h2 {
+                        font-size: 44px;
+                        @include breakpoint(phone) {
+                            font-size: 21px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 28px;
+                        }
+                    }
+                    .btn {
+                        background-color: transparent;
+                        color: #BA171E;
+                        @include breakpoint(phone) {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .btn:hover {
+                        background-color: #BA171E;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .col-column-2 {
+            background-image: url('../../assets/images/Fondo-Columna.jpg');
+            background-size: cover;
+            padding-bottom: 5%;
+            padding-top: 5%;
+            @include breakpoint(phone) {
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+            .items {
+                .item-1 {
+                    text-align: right;
+                    padding-top: 5%;
+                    @include breakpoint(phone) {
+                        text-align: center;
+                    }
+                    .btn {
+                        background-color: #BA171E;
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        transition: 1s;
+                        font-size: 24px;
+                    }
+                    .btn:hover {
+                        color: #BA171E;
+                        background-color: #FFFFFF;
+                    }
+                }
+                .item-2 {
+                    padding-right: 13%;
+                    padding-left: 5%;
+                    text-align: left;
+                    @include breakpoint(phone) {
+                        padding-right: 9%;
+                        padding-left: 13%;
+                    }
+                    h2 {
+                        font-size: 44px;
+                        color: #032233;
+                        @include breakpoint(phone) {
+                            font-size: 30px;
+                            margin-top: 22px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
+        .col-column-3 {
+            background-image: url('../../assets/images/Fondo-Columna-2.jpg');
+            background-size: cover;
+            padding-bottom: 3%;
+            color: #FFFFFF;
+            @include breakpoint(phone) {
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+            .items {
+                .item-2 {
+                    padding-left: 12%;
+                    @include breakpoint(phone) {
+                        padding-left: 0;
+                    }
+                    span {
+                        font-size: 26px;
+                        @include breakpoint(phone) {
+                            font-size: 19px;
+                        }
+                    }
+                    h2 {
+                        font-size: 42px;
+                        font-weight: bold;
+                        @include breakpoint(phone) {
+                            font-size: 29px;
+                        }
+                    }
+                    .btn {
+                        background-color: transparent;
+                        border: solid 1px #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}

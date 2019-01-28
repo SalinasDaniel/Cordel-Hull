@@ -1,0 +1,112 @@
+body {
+    main {
+        .popups {
+            .modal-dialog {
+                max-width: 1200px;
+                .modal-content {
+                    background-color: transparent;
+                    border: none;
+                    .close {
+                        position: absolute;
+                        left: 90%;
+                        background-color: #FFFFFF;
+                        height: 24px;
+                        width: 26px;
+                        border-radius: 14px;
+                        z-index: 2;
+                    }
+                    .group {
+                        .img {
+                            @include breakpoint(phone) {
+                                display: none;
+                            }
+                            img {
+                                background-image: url('../../assets/images/Portada.jpg');
+                                background-size: cover;
+                                border-radius: 15px;
+                                padding-top: 21%;
+                                padding-bottom: 21%;
+                                padding-left: 31%;
+                                padding-right: 31%;
+                                @include breakpoint(tablet) {
+                                    padding-top: 53%;
+                                    padding-bottom: 35%;
+                                    padding-left: 24%;
+                                    padding-right: 24%;
+                                }
+                            }
+                        }
+                        .form {
+                            background-color: #FFFFFF;
+                            text-align: center;
+                            border-radius: 15px;
+                            margin-left: -9%;
+                            @include breakpoint(phone) {
+                                margin-top: 18px;
+                                width: 95%;
+                                margin-left: 3%;
+                            }
+                            img {
+                                width: 109%;
+                                border-radius: 0px 0px 41px 41px;
+                                margin-left: -4%;
+                                @include breakpoint(tablet) {
+                                    display: none;
+                                }
+                                @include breakpoint(desktop) {
+                                    display: none;
+                                }
+                            }
+                            p {
+                                font-size: 27px;
+                                color: #032233;
+                                margin-top: 44px;
+                                @include breakpoint(tablet) {
+                                    font-size: 26px;
+                                }
+                            }
+                            form {
+                                padding-left: 11%;
+                                padding-right: 11%;
+                                input {
+                                    display: block;
+                                    width: 100%;
+                                    height: 46px;
+                                    margin-bottom: 17px;
+                                    border-radius: 6px;
+                                    padding-left: 6%;
+                                    border: solid 1px #032233;
+                                    background-color: transparent;
+                                }
+                                 ::placeholder {
+                                    color: #032233;
+                                }
+                                .bton {
+                                    width: 100%;
+                                    background-color: #CC1111;
+                                    font-size: 21px;
+                                    color: #FFFFFF;
+                                    border-radius: 6px;
+                                    transition: 1s;
+                                    font-weight: bold;
+                                    @include breakpoint(phone) {
+                                        margin-bottom: 50px;
+                                    }
+                                    @include breakpoint(tablet) {
+                                        font-size: 20px;
+                                        margin-bottom: 50px;
+                                    }
+                                }
+                                .bton:hover {
+                                    background-color: #FFFFFF;
+                                    color: #CC1111;
+                                    border: solid 1px #CC1111;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
