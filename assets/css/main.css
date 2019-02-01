@@ -78,7 +78,7 @@ body main .headboard {
         body main .headboard .form-description .description {
           padding-left: 11%; } }
       body main .headboard .form-description .description h1 {
-        line-height: 1;
+        line-height: 0.5;
         font-size: 46px;
         font-weight: bold; }
         @media (max-width: 667px) {
@@ -108,7 +108,7 @@ body main .headboard {
     width: 62%;
     padding-right: 7%;
     padding-left: 7%;
-    padding-top: 5%;
+    padding-top: 8%;
     padding-bottom: 8%;
     border-radius: 30px; }
     @media (max-width: 667px) {
@@ -157,7 +157,8 @@ body main .headboard {
       float: left;
       margin-top: 14px; }
     body main .headboard .form .item p {
-      color: #03132E; }
+      color: #03132E;
+      line-height: 1; }
       @media (max-width: 667px) {
         body main .headboard .form .item p {
           font-size: 23px;
@@ -171,7 +172,7 @@ body main .headboard {
 
 body main .block-3-items {
   background-color: #E8E8E8;
-  padding-top: 10%;
+  padding-top: 15%;
   text-align: center; }
   @media (max-width: 667px) {
     body main .block-3-items {
@@ -227,13 +228,12 @@ body main .block-3-items {
       body main .block-3-items .line img {
         margin-top: 35px; } }
 
-body main .block-1,
 body main .block-2 {
   padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-bottom: 10%; }
 
 body main .block-1 {
-  padding-bottom: 10%; }
+  padding-bottom: 15%; }
   @media (max-width: 667px) {
     body main .block-1 {
       padding-top: 30%; } }
@@ -269,7 +269,8 @@ body main .contac {
       body main .contac .items .item1 {
         padding-top: 9%; } }
     body main .contac .items .item1 h2 {
-      font-size: 51px; }
+      font-size: 51px;
+      line-height: 1; }
       @media (max-width: 667px) {
         body main .contac .items .item1 h2 {
           font-size: 36px; } }
@@ -284,8 +285,10 @@ body main .contac {
       border-radius: 10px;
       font-weight: bold;
       transition: 1s;
-      width: 24%;
-      font-size: 20px; }
+      width: 43%;
+      height: 60px;
+      margin-top: 45px;
+      font-size: 25px; }
       @media (max-width: 667px) {
         body main .contac .items .item1 .btn {
           width: 60%;
@@ -331,7 +334,8 @@ body main .column .items .item-2 {
     body main .column .items .item-2 {
       padding-right: 6%; } }
   body main .column .items .item-2 h2 {
-    font-size: 59px; }
+    font-size: 59px;
+    line-height: 1; }
     @media (max-width: 667px) {
       body main .column .items .item-2 h2 {
         font-size: 28px; } }
@@ -343,7 +347,10 @@ body main .column .items .item-2 {
     color: #FFFFFF;
     font-weight: bold;
     border: solid 1px #BA171E;
-    width: 26%;
+    width: 39%;
+    height: 50px;
+    margin-top: 12px;
+    font-size: 21px;
     transition: 1s; }
     @media (max-width: 667px) {
       body main .column .items .item-2 .btn {
@@ -375,7 +382,8 @@ body main .col-column .items .item-2 {
   padding-left: 9%;
   padding-right: 20%; }
   body main .col-column .items .item-2 h2 {
-    font-size: 44px; }
+    font-size: 44px;
+    color: #032233; }
     @media (max-width: 667px) {
       body main .col-column .items .item-2 h2 {
         font-size: 21px; } }
@@ -417,7 +425,7 @@ body main .col-column-2 {
       color: #BA171E;
       background-color: #FFFFFF; }
   body main .col-column-2 .items .item-2 {
-    padding-right: 13%;
+    padding-right: 10%;
     padding-left: 5%;
     text-align: left; }
     @media (max-width: 667px) {
@@ -506,7 +514,11 @@ body main .steps {
       border-radius: 53px;
       margin-bottom: 13px;
       padding-top: 4%;
-      margin-left: 25%; }
+      margin-left: 31%;
+      margin-right: 31%; }
+      @media (min-width: 668px) and (max-width: 1024px) {
+        body main .steps .items .item .num {
+          margin-left: 25%; } }
       @media (min-width: 1025px) {
         body main .steps .items .item .num {
           margin-left: 33%; } }
@@ -517,7 +529,8 @@ body main .steps {
         font-size: 55px;
         color: #BA171E; }
     body main .steps .items .item p {
-      font-size: 20px; }
+      font-size: 20px;
+      line-height: 1; }
   body main .steps .btn {
     margin-top: 58px;
     background-color: #BA171E;
@@ -542,6 +555,7 @@ body main .whatsapp {
     padding-top: 16%; }
     body main .whatsapp .item-1 h2 {
       font-size: 39px;
+      line-height: 1;
       color: #032233; }
       @media (max-width: 667px) {
         body main .whatsapp .item-1 h2 {
@@ -555,7 +569,7 @@ body main .whatsapp {
       background: linear-gradient(to right, #00A525 0%, #00CA62 100%);
       color: #FFFFFF;
       font-weight: bold;
-      width: 42%;
+      width: 55%;
       font-size: 27px;
       border-radius: 30px;
       margin-top: 30px;
@@ -598,17 +612,24 @@ body main .accordion {
         body main .accordion .groups .group-1 .card .card-header,
         body main .accordion .groups .group-2 .card .card-header {
           padding-right: 20%; }
+          body main .accordion .groups .group-1 .card .card-header .txt,
+          body main .accordion .groups .group-2 .card .card-header .txt {
+            padding-top: 3%;
+            padding-bottom: 3%; }
           body main .accordion .groups .group-1 .card .card-header span,
           body main .accordion .groups .group-2 .card .card-header span {
-            font-size: 16px;
             color: #03132E;
             font-weight: bold; }
+            @media (min-width: 1025px) {
+              body main .accordion .groups .group-1 .card .card-header span,
+              body main .accordion .groups .group-2 .card .card-header span {
+                font-size: 16px; } }
           body main .accordion .groups .group-1 .card .card-header button,
           body main .accordion .groups .group-2 .card .card-header button {
             position: absolute;
             left: 86%;
             font-size: 37px;
-            top: 4px;
+            top: 0px;
             color: #03132E; }
             @media (max-width: 667px) {
               body main .accordion .groups .group-1 .card .card-header button,
@@ -827,7 +848,8 @@ body footer {
   body footer .row {
     margin-right: 0; }
     body footer .row .col-sm-8 ul {
-      margin-top: 37px; }
+      margin-top: 37px;
+      margin-bottom: 30px; }
       @media (min-width: 1025px) {
         body footer .row .col-sm-8 ul {
           margin-left: 9%;
@@ -856,7 +878,7 @@ body footer {
       margin-bottom: 23px; }
       @media (min-width: 1025px) {
         body footer .row .logo {
-          margin-top: 40px;
+          margin-top: 50px;
           margin-bottom: 40px; } }
 
 body main .popups .modal-dialog {

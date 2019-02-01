@@ -44,7 +44,7 @@ body {
                         padding-left: 11%;
                     }
                     h1 {
-                        line-height: 1;
+                        line-height: 0.5;
                         font-size: 46px;
                         font-weight: bold;
                         @include breakpoint(phone) {
@@ -83,7 +83,7 @@ body {
                     width: 62%;
                     padding-right: 7%;
                     padding-left: 7%;
-                    padding-top: 5%;
+                    padding-top: 8%;
                     padding-bottom: 8%;
                     border-radius: 30px;
                     @include breakpoint(phone) {
@@ -140,6 +140,7 @@ body {
                     }
                     p {
                         color: #03132E;
+                        line-height: 1;
                         @include breakpoint(phone) {
                             font-size: 23px;
                             margin-top: 8px;

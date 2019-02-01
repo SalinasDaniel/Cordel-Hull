@@ -6,6 +6,7 @@ body {
             .col-sm-8 {
                 ul {
                     margin-top: 37px;
+                    margin-bottom: 30px;
                     @include breakpoint(desktop) {
                         margin-left: 9%;
                         margin-top: 40px;
@@ -37,7 +38,7 @@ body {
                 margin-top: 11px;
                 margin-bottom: 23px;
                 @include breakpoint(desktop) {
-                    margin-top: 40px;
+                    margin-top: 50px;
                     margin-bottom: 40px;
                 }
             }

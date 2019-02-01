@@ -50,7 +50,11 @@ body {
                         border-radius: 53px;
                         margin-bottom: 13px;
                         padding-top: 4%;
-                        margin-left: 25%;
+                        margin-left: 31%;
+                        margin-right: 31%;
+                        @include breakpoint(tablet) {
+                            margin-left: 25%;
+                        }
                         @include breakpoint(desktop) {
                             margin-left: 33%;
                         }
@@ -64,6 +68,7 @@ body {
                     }
                     p {
                         font-size: 20px;
+                        line-height: 1;
                     }
                 }
             }

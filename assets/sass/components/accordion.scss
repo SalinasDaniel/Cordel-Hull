@@ -22,16 +22,22 @@ body {
                         text-align: left;
                         .card-header {
                             padding-right: 20%;
+                            .txt {
+                                padding-top: 3%;
+                                padding-bottom: 3%;
+                            }
                             span {
-                                font-size: 16px;
                                 color: #03132E;
                                 font-weight: bold;
+                                @include breakpoint(desktop) {
+                                    font-size: 16px;
+                                }
                             }
                             button {
                                 position: absolute;
                                 left: 86%;
                                 font-size: 37px;
-                                top: 4px;
+                                top: 0px;
                                 color: #03132E;
                                 @include breakpoint(phone) {
                                     margin-left: 45%;

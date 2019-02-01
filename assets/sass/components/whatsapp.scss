@@ -9,6 +9,7 @@ body {
                 padding-top: 16%;
                 h2 {
                     font-size: 39px;
+                    line-height: 1;
                     color: #032233;
                     @include breakpoint(phone) {
                         font-size: 23px;
@@ -24,7 +25,7 @@ body {
                     background: linear-gradient(to right, #00A525 0%, #00CA62 100%);
                     color: #FFFFFF;
                     font-weight: bold;
-                    width: 42%;
+                    width: 55%;
                     font-size: 27px;
                     border-radius: 30px;
                     margin-top: 30px;
